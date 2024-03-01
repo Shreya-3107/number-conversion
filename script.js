@@ -78,9 +78,6 @@ document
       case "dec":
         //code
         break;
-
-      case "hex":
-        //code
-        break;
+        
     }
   });
