@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main{
+    margin: 50px;
+    display: flex;
+}
+
+#input-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.inp{
+    margin: 10px 0px;
+    padding: 8px;
+    display: inline-block;
+}
+
+.inp:focus{
+    border-color:rgb(72, 19, 115);
+    outline: none;
+}
+
+#inputNumber{
+    width: 250px;
+}
+
+#output{
+    margin: 10px 30px;
+    padding: 10px;
+    background-color: rgb(213, 192, 247);
+    border: 3px solid rgb(72, 19, 115);
+    height: 200px;
+    width: 300px;
+    color: rgb(72, 19, 115);
+}
+
+#showValue{
+    font-size: 30px;
+}

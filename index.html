@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Number conversion</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div>
-        <div id="input">
-            <form action="" id="input-form">
-                <input type="text" id="inputNumber">
-                <select id="input-type">
-                    <option value="bin" id="b-i">Binary</option>
-                    <option value="oct" id="o-i">Octal</option>
-                    <option value="dec" id="d-i">Decimal</option>
-                </select>
-                <select id="convert-type">
-                    <option value="bin" id="b-o">Binary</option>
-                    <option value="oct" id="o-o">Octal</option>
-                    <option value="dec" id="d-o">Decimal</option>
-                </select>
-                <button id="sub">submit</button>
-            </form>
-        </div>
-        <div id="output">
-
-        </div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="input">
+        <form action="" id="input-form">
+          <input type="text" id="inputNumber" class="inp" />
+          <select id="input-type" class="inp">
+            <option value="bin" id="b-i">Binary</option>
+            <option value="oct" id="o-i">Octal</option>
+            <option value="dec" id="d-i">Decimal</option>
+          </select>
+          <select id="convert-type" class="inp">
+            <option value="bin" id="b-o">Binary</option>
+            <option value="oct" id="o-o">Octal</option>
+            <option value="dec" id="d-o">Decimal</option>
+          </select>
+          <button id="sub" class="inp">submit</button>
+        </form>
+      </div>
+      <div id="output">
+        Equivalent <span id="showType"></span> value is: <br>
+        <span id="showValue"></span>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
