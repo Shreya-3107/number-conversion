@@ -23,7 +23,8 @@ document
         switch (outputType) {
           case "bin":
             opNum = inputNum;
-            opDisplay.innerHTML = opNum;
+            opTypeDisplay.innerHTML = "binary";
+            opValueDisplay.innerHTML = opNum;
             break;
 
           case "oct":
