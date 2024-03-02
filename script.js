@@ -8,13 +8,13 @@ document
     var inputNum = document.getElementById("inputNumber").value;
     var opTypeDisplay = document.getElementById("showType");
     var opValueDisplay = document.getElementById("showValue");
-    var copy_input = parseInt(inputNum);
     var opNum;
     var inputCopy = parseInt(inputNum);
     var digit;
     var pow;
+    var num;
 
-    var nod = copy_input.toString().length;
+    var nod = inputCopy.toString().length;
 
     switch (inputType) {
       case "bin":
@@ -22,17 +22,16 @@ document
 
         switch (outputType) {
           case "bin":
-            opNum = inputNum;
+            opNum = inputCopy;
             opTypeDisplay.innerHTML = "binary";
             opValueDisplay.innerHTML = opNum;
             break;
 
           case "oct":
-            var num;
             pow = 1;
             opNum = 0;
 
-            while (inputCopy > 0) {
+            while (inputCopy) {
               digit = inputCopy % 1000;
               switch (digit) {
                 case 0:
