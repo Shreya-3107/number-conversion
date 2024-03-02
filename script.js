@@ -94,12 +94,15 @@ document
 
       case "dec":
         //code
+
         switch (outputType) {
+
           case "dec":
             opNum = inputCopy;
             opTypeDisplay.innerHTML = "decimal";
             opValueDisplay.innerHTML = opNum;
             break;
+
           case "bin":
             pow=1;
             opNum=0;
@@ -113,6 +116,7 @@ document
             opTypeDisplay.innerHTML = "binary";
             opValueDisplay.innerHTML = opNum;
             break;
+            
           case "oct":
             pow=1;
             opNum=0;
