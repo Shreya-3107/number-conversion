@@ -9,6 +9,7 @@ document
     var opTypeDisplay = document.getElementById("showType");
     var opValueDisplay = document.getElementById("showValue");
     var opNum;
+    var rem;
     var inputCopy = parseInt(inputNum);
     var digit;
     var pow;
@@ -93,6 +94,40 @@ document
 
       case "dec":
         //code
+        switch (outputType) {
+          case "dec":
+            opNum = inputCopy;
+            opTypeDisplay.innerHTML = "decimal";
+            opValueDisplay.innerHTML = opNum;
+            break;
+          case "bin":
+            pow=1;
+            opNum=0;
+            while(inputCopy)
+            {
+              rem = inputCopy%2;
+              opNum = (rem*pow)+opNum;
+              pow = pow*10;
+              inputCopy = Math.floor(inputCopy/2);
+            }
+            opTypeDisplay.innerHTML = "binary";
+            opValueDisplay.innerHTML = opNum;
+            break;
+          case "oct":
+            pow=1;
+            opNum=0;
+            while(inputCopy)
+            {
+              rem = inputCopy%8;
+              opNum = (rem*pow)+opNum;
+              pow = pow*10;
+              inputCopy = Math.floor(inputCopy/8);
+            }
+            opTypeDisplay.innerHTML = "octal";
+            opValueDisplay.innerHTML = opNum;
+            break;
+        }
+        
         break;
     }
   });
