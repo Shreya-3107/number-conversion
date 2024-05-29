@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="main">
-      <div id="input">
+    <div class="main">
+      <div class="input">
+        <h2>BASE CONVERTOR</h2><br>
         <form action="" id="input-form">
-          <input type="text" id="inputNumber" class="inp" />
+          <b>Enter Value:</b><input type="text" id="inputNumber" class="inp" />
           <select id="input-type" class="inp">
             <option value="bin" id="b-i">Binary</option>
             <option value="oct" id="o-i">Octal</option>
@@ -21,13 +22,15 @@
             <option value="oct" id="o-o">Octal</option>
             <option value="dec" id="d-o">Decimal</option>
           </select>
-          <button id="sub" class="inp">submit</button>
+          <center><button id="sub" class="inp"><b>submit</b></button></center>
         </form>
       </div>
+      <center>
       <div id="output">
-        Equivalent <span id="showType"></span> value is: <br>
+        <b>Equivalent </b><span id="showType"></span> <b>value is:</b><br>
         <span id="showValue"></span>
       </div>
+    </center>
     </div>
     <script src="script.js"></script>
   </body>

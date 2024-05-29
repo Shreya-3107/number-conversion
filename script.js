@@ -213,7 +213,7 @@ document.getElementById("input-form").addEventListener("submit", function (event
             opValueDisplay.innerHTML = opNum;
             break;
         }
-        
         break;
     }
   });
+  inputType.innerHTML="";
